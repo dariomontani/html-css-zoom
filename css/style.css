@@ -86,10 +86,12 @@ nav{
 .col-left,
 .col-right{
     width: 20%;
+    min-width: 200px;
 }
 
 .col-centre{
     width: 60%;
+    min-width: 600px;
 }
 
 .simbol{
