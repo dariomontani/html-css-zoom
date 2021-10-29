@@ -10,51 +10,134 @@ html{
 }
 
 body{
-    /* background-color: black; */
+    background-color: black;
 }
 
 /* header */
 .container-header{
     height: 50px;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: black;
 }
 
 .container-header div{
     color: white;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.8);
     margin-right: 1em;
+    padding: 0.2em;
+    border-radius: 5px;
+    font-size: small;
 }
 /* /header */
 
 /* main */
 .container-main{
+    font-size: small;
+    height: calc(100vh - 110px);
     width: 90%;
-    border: 1px solid black;
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .user{
-    height: 100px;
-    border: 1px solid red;
+    height: 110px;
+    position: relative;
 }
 
 .user img{
     width: 100%;
     height: 100%;
 }
+
+.name-user{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 3px;
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+}
 /* /main */
 
 /* nav */
+nav{
+    min-width: 1200px;
+}
+
 .container-nav{
     width: 100%;
-    height: 100px;
-    border: 1px solid green;
+    height: 60px;
+    background-color:#303030;
     position: fixed;
     bottom: 0;
+    display: flex;
+    font-size: small;
+    color: white;
+}
+
+.col-left,
+.col-right{
+    width: 20%;
+}
+
+.col-centre{
+    width: 60%;
+}
+
+.simbol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.col-left .simbol i,
+.col-centre .simbol i{
+    font-size: 1.8em;
+    margin-bottom: 0.3em;
+}
+
+.col-left,
+.col-centre,
+.col-right{
+    display: flex;
+    align-items: center;
+}
+
+.arrow{
+    margin-left: 1em;
+}
+
+.col-centre{
+    justify-content: center;
+}
+
+#rot{
+    transform: rotate(270deg);
+}
+
+#green{
+    color: #4bc800;
+}
+
+.col-right{
+    justify-content: flex-end;
+}
+
+.end-meeting{
+    height: 60px;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
 }
 /* /nav */
